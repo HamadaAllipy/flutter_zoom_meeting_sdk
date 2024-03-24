@@ -1,10 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_zoom_meeting/zoom_options.dart';
-import 'package:flutter_zoom_meeting/zoom_view.dart';
 import 'package:flutter_zoom_example/services/zoom_api.dart';
 import 'package:flutter_zoom_example/zoom/jwt.dart';
 import 'package:flutter_zoom_example/zoom/zoom_functions.dart';
@@ -44,8 +41,7 @@ class _MeetingWidgetState extends State<MeetingWidget> {
                   // The basic Material Design action button.
                   return ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blue, // background
-                      onPrimary: Colors.white, // foreground
+                      foregroundColor: Colors.white, backgroundColor: Colors.blue, // foreground
                     ),
                     onPressed: ()  async{
                       {
@@ -79,8 +75,7 @@ class _MeetingWidgetState extends State<MeetingWidget> {
                 builder: (context) {
                   return ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blue, // background
-                      onPrimary: Colors.white, // foreground
+                      foregroundColor: Colors.white, backgroundColor: Colors.blue, // foreground
                     ),
                     onPressed: () async{
 
